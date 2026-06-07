@@ -6,16 +6,26 @@ const listMenu = [
 
 function PR29_2() {
   return (
-    <header style={{ backgroundColor: '#f0f0f0', padding: '10px' }}>
+    <header style={{ textAlign: 'center', padding: '20px' }}>
+      {/* Daftar menu di header */}
       <nav>
-        <ul style={{ listStyle: 'none', display: 'flex', gap: '20px' }}>
-          {listMenu.map((menu) => (
-            <li key={menu.code}>
-              <a href={`#${menu.code}`}>{menu.name}</a>
-            </li>
-          ))}
-        </ul>
+        {listMenu.map((menu) => (
+          <span
+            key={menu.code}
+            style={{
+              margin: '0 15px',
+              fontSize: '18px',
+              fontWeight: 'normal',
+              cursor: 'pointer',
+            }}
+          >
+            {menu.name}
+          </span>
+        ))}
       </nav>
+
+      {/* Judul besar */}
+      <h1 style={{ marginTop: '20px', fontSize: '32px', fontWeight: 'bold' }}>Halo Semua</h1>
     </header>
   );
 }

@@ -1,10 +1,9 @@
-import './App.css'
+import PR29_2 from './PR29_2.jsx';
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
-      <p>Ini My Vite</p>
+      <PR29_2 />
     </div>
   );
 }
