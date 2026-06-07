@@ -10,7 +10,8 @@
 // import PR30_3 from './PR30_3.jsx';
 // import PR30_4 from './PR30_4.jsx';
 // import PR30_5 from './PR30_5.jsx';
-import PR30_6 from './PR30_6.jsx';
+// import PR30_6 from './PR30_6.jsx';
+import PR30_7 from './PR30_7.jsx';
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <PR30_3 /> */}
       {/* <PR30_4 /> */}
       {/* <PR30_5 /> */}
-      <PR30_6 />
+      {/* <PR30_6 /> */}
+      <PR30_7 />
     </div>
   );
 }

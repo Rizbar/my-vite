@@ -4,7 +4,6 @@ import ReactDOM from "react-dom/client";
 const initialState = { count: 0 };
 
 function reducer(state) {
-  // Melengkapi bagian "// isi disini" untuk menambah nilai count sebanyak 1
   return {
     count: state.count + 1
   };
