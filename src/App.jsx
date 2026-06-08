@@ -13,7 +13,7 @@
 // import PR30_6 from './PR30_6.jsx';
 // import PR30_7 from './PR30_7.jsx';
 
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // import Home from './PR31_1/Home.jsx';
 // import CreateTodo from './PR31_1/CreateTodo.jsx';
@@ -28,8 +28,11 @@
 // import CommentUser from './PR31_2/CommentUser.jsx';
 // import ListUserContext from './PR31_2/ListUserContext.jsx';
 
-import Home from './PR32_1/page/Home'
-import Detail from './PR32_1/page/Detail' 
+// import Home from './PR32_1/page/Home'
+// import Detail from './PR32_1/page/Detail'
+
+import Home from './PR32_2/page/Home'
+import Detail from './PR32_2/page/Detail'
 
 
 // function App() {
@@ -77,14 +80,29 @@ import Detail from './PR32_1/page/Detail'
 //   );
 // }
 
-import { Routes, Route } from 'react-router-dom';
+
+// Tugas 32 bagian 1
+// import { Routes, Route } from 'react-router-dom';
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/" element={<Home />} />
+//       <Route path="/detail/:id" element={<Detail />} />
+//     </Routes>
+//   );
+// }
+
+// export default App;
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/detail/:id" element={<Detail />} />
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/detail/:id" element={<Detail />} />
+      </Routes>
+    </Router>
   );
 }
 

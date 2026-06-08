@@ -26,14 +26,27 @@
 //   </UserProvider>
 // );
 
-// tugas 32
+// tugas 32 bagian 1
+// import ReactDOM from 'react-dom/client';
+// import { BrowserRouter } from 'react-router-dom';
+// import App from './App';
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>
+// );
+
+// Tugas 32 bagian 2
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './PR32_2/App/store';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <Provider store={store}>
     <App />
-  </BrowserRouter>
+  </Provider>
 );
