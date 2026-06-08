@@ -13,7 +13,7 @@
 // import PR30_6 from './PR30_6.jsx';
 // import PR30_7 from './PR30_7.jsx';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // import Home from './PR31_1/Home.jsx';
 // import CreateTodo from './PR31_1/CreateTodo.jsx';
@@ -34,53 +34,58 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Home from './PR32_2/page/Home'
 // import Detail from './PR32_2/page/Detail'
 
-import Home from '../../my-react/src/PR32_3/Home'
-import Detail from '../../my-react/src/PR32_3/Detail'
+// import Home from '../../my-react/src/PR32_3/Home'
+// import Detail from '../../my-react/src/PR32_3/Detail'
 
-// function App() {
-//   return (
-//     // <div>
-//     //   {/* <PR29_2 /> */}
-//     //   {/* <PR29_3 /> */}
-//     //   {/* <PR29_4 /> */}
-//     //   {/* <PR29_5 /> */}
-//     //   {/* <PR29_6 /> */}
+import CreateUserBox from "./PR34_3/CreateUserbox";
+
+function App() {
+  return (
+    <div>
+      {/* <PR29_2 /> */}
+      {/* <PR29_3 /> */}
+      {/* <PR29_4 /> */}
+      {/* <PR29_5 /> */}
+      {/* <PR29_6 /> */}
 
 
-//     //   {/* <PR30_1 /> */}
-//     //   {/* <PR30_2 /> */}
-//     //   {/* <PR30_3 /> */}
-//     //   {/* <PR30_4 /> */}
-//     //   {/* <PR30_5 /> */}
-//     //   {/* <PR30_6 /> */}
-//     //   {/* <PR30_7 /> */}
-//     // </div>
+      {/* <PR30_1 /> */}
+      {/* <PR30_2 /> */}
+      {/* <PR30_3 /> */}
+      {/* <PR30_4 /> */}
+      {/* <PR30_5 /> */}
+      {/* <PR30_6 /> */}
+      {/* <PR30_7 /> */}
 
-//     <Router>
-//       <Routes>
-//         {/* PR 31 bagian 1 */}
-//         {/* <Route path="/" element={<Home />} /> */}
-//         {/* <Route path="/buat" element={<CreateTodo />} /> */}
-//         {/* <Route path="/edit" element={<EditTodo />} /> */}
-//         {/* <Route path="/detail" element={<DetailTodo />} /> */}
+      <CreateUserBox />
 
-//         {/* PR 31 bagian 2 */}
-//         {/* <Route path="/" element={<Utama />}>
-//           <Route path="list-user" element={<ListUser />} />
-//           <Route path="list-user-context" element={<ListUserContext />} />
+    </div>
 
-//           <Route path="detail-user/:user_id" element={<DetailUser />}>
-//             <Route path="post" element={<PostUser />} />
-//             <Route path="comment" element={<CommentUser />} />
-//           </Route>
+    // <Router>
+    //   <Routes>
+    //     {/* PR 31 bagian 1 */}
+    //     {/* <Route path="/" element={<Home />} /> */}
+    //     {/* <Route path="/buat" element={<CreateTodo />} /> */}
+    //     {/* <Route path="/edit" element={<EditTodo />} /> */}
+    //     {/* <Route path="/detail" element={<DetailTodo />} /> */}
 
-//           <Route path="post-user" element={<PostUser />} />
-//           <Route path="edit-post/:post_id" element={<EditPostUser />} />
-//         </Route> */}
-//       </Routes>
-//     </Router>
-//   );
-// }
+    //     {/* PR 31 bagian 2 */}
+    //     {/* <Route path="/" element={<Utama />}>
+    //       <Route path="list-user" element={<ListUser />} />
+    //       <Route path="list-user-context" element={<ListUserContext />} />
+
+    //       <Route path="detail-user/:user_id" element={<DetailUser />}>
+    //         <Route path="post" element={<PostUser />} />
+    //         <Route path="comment" element={<CommentUser />} />
+    //       </Route>
+
+    //       <Route path="post-user" element={<PostUser />} />
+    //       <Route path="edit-post/:post_id" element={<EditPostUser />} />
+    //     </Route> */}
+    //   </Routes>
+    // </Router>
+  );
+}
 
 
 // Tugas 32 bagian 1
@@ -95,17 +100,17 @@ import Detail from '../../my-react/src/PR32_3/Detail'
 //   );
 // }
 
-// export default App;
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detail/:id" element={<Detail />} />
-      </Routes>
-    </Router>
-  );
-}
-
 export default App;
+
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/detail/:id" element={<Detail />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
