@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom';
 
 function EditPostUser() {
-  const { post_id } = useParams();
+  const { postId } = useParams();
 
   return (
     <div>
-      <h3>Edit Post ID: {post_id}</h3>
+      <h3>Edit Post ID: {postId}</h3>
     </div>
   );
 }

@@ -26,6 +26,7 @@ import PostUser from './PR31_2/PostUser.jsx';
 import DetailUser from './PR31_2/DetailUser.jsx';
 import EditPostUser from './PR31_2/EditPostUser.jsx';
 import CommentUser from './PR31_2/CommentUser.jsx';
+import ListUserContext from './PR31_2/ListUserContext.jsx';
 
 
 function App() {
@@ -58,7 +59,8 @@ function App() {
         {/* PR 31 bagian 2 */}
         <Route path="/" element={<Utama />}>
           <Route path="list-user" element={<ListUser />} />
-          
+          <Route path="list-user-context" element={<ListUserContext />} />
+
           <Route path="detail-user/:user_id" element={<DetailUser />}>
             <Route path="post" element={<PostUser />} />
             <Route path="comment" element={<CommentUser />} />

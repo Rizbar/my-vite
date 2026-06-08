@@ -1,7 +1,13 @@
+import { useContext } from 'react';
+import { UserContext } from './UserContext';
+
 function CommentUser() {
+  const { userName } = useContext(UserContext);
+
   return (
     <div>
-      <h3>Comments User</h3>
+      <h3>Comments for {userName}</h3>
+      {/* Daftar komentar */}
     </div>
   );
 }

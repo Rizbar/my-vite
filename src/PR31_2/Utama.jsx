@@ -7,6 +7,7 @@ function Utama() {
       <nav>
         <ul>
           <li><Link to="/list-user">List User</Link></li>
+          <li><Link to="/list-user-context">List User Context</Link></li>
           <li><Link to="/post-user">Post User</Link></li>
         </ul>
       </nav>

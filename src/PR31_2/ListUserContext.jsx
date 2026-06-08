@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useContext } from 'react';
+import { UserContext } from './UserContext';
 
 function ListUser() {
-  const location = useLocation();
+  const { setUserName } = useContext(UserContext);
 
-  useEffect(() => {
-    console.log('URL berubah:', location.pathname);
-  }, [location]);
+  const handleClick = (name) => {
+    setUserName(name);
+  };
 
   const users = [
     { id: 1, name: 'User Satu' },
@@ -19,7 +19,8 @@ function ListUser() {
       <ul>
         {users.map(user => (
           <li key={user.id}>
-            {user.name} - <a href={`/detail-user/${user.id}`}>Detail</a>
+            {user.name} -{' '}
+            <button onClick={() => handleClick(user.name)}>Pilih User</button>
           </li>
         ))}
       </ul>
