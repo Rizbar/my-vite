@@ -13,13 +13,27 @@
 //   </React.StrictMode>,
 // )
 
+// tugas 31 bagian 3
+
+// import ReactDOM from 'react-dom/client';
+// import App from './App'; // Buat file App.js
+// import { UserProvider } from './PR31_2/UserContext';
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <UserProvider>
+//     <App />
+//   </UserProvider>
+// );
+
+// tugas 32
 import ReactDOM from 'react-dom/client';
-import App from './App'; // Buat file App.js
-import { UserProvider } from './PR31_2/UserContext';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <UserProvider>
+  <BrowserRouter>
     <App />
-  </UserProvider>
+  </BrowserRouter>
 );
