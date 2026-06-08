@@ -11,26 +11,43 @@
 // import PR30_4 from './PR30_4.jsx';
 // import PR30_5 from './PR30_5.jsx';
 // import PR30_6 from './PR30_6.jsx';
-import PR30_7 from './PR30_7.jsx';
+// import PR30_7 from './PR30_7.jsx';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './PR31_1/Home.jsx';
+import CreateTodo from './PR31_1/CreateTodo.jsx';
+import EditTodo from './PR31_1/EditTodo.jsx';
+import DetailTodo from './PR31_1/DetailTodo.jsx';
+
 
 function App() {
   return (
-    <div>
-      {/* <PR29_2 /> */}
-      {/* <PR29_3 /> */}
-      {/* <PR29_4 /> */}
-      {/* <PR29_5 /> */}
-      {/* <PR29_6 /> */}
+    // <div>
+    //   {/* <PR29_2 /> */}
+    //   {/* <PR29_3 /> */}
+    //   {/* <PR29_4 /> */}
+    //   {/* <PR29_5 /> */}
+    //   {/* <PR29_6 /> */}
 
 
-      {/* <PR30_1 /> */}
-      {/* <PR30_2 /> */}
-      {/* <PR30_3 /> */}
-      {/* <PR30_4 /> */}
-      {/* <PR30_5 /> */}
-      {/* <PR30_6 /> */}
-      <PR30_7 />
-    </div>
+    //   {/* <PR30_1 /> */}
+    //   {/* <PR30_2 /> */}
+    //   {/* <PR30_3 /> */}
+    //   {/* <PR30_4 /> */}
+    //   {/* <PR30_5 /> */}
+    //   {/* <PR30_6 /> */}
+    //   {/* <PR30_7 /> */}
+    // </div>
+
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/buat" element={<CreateTodo />} />
+        <Route path="/edit" element={<EditTodo />} />
+        <Route path="/detail" element={<DetailTodo />} />
+      </Routes>
+    </Router>
   );
 }
 
