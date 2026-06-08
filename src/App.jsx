@@ -31,8 +31,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Home from './PR32_1/page/Home'
 // import Detail from './PR32_1/page/Detail'
 
-import Home from './PR32_2/page/Home'
-import Detail from './PR32_2/page/Detail'
+// import Home from './PR32_2/page/Home'
+// import Detail from './PR32_2/page/Detail'
+
+import Home from './PR32_3/Home'
+import Detail from './PR32_3/Detail'
 
 
 // function App() {

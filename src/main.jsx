@@ -39,14 +39,26 @@
 // );
 
 // Tugas 32 bagian 2
+// import ReactDOM from 'react-dom/client';
+// import { Provider } from 'react-redux';
+// import { store } from './PR32_2/App/store';
+// import App from './App';
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <Provider store={store}>
+//     <App />
+//   </Provider>
+// );
+
+// Tugas 32 bagian 3
 import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { store } from './PR32_2/App/store';
+import { RecoilRoot } from 'recoil';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>
+  <RecoilRoot>
     <App />
-  </Provider>
+  </RecoilRoot>
 );
